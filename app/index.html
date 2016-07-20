@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <title></title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+</head>
+<body>
+    <div id="app-root"></div>
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <!-- 手机端触摸效果 -->
+    <script type="text/javascript">
+      function jTouch(touchclass){
+        var touchedDOM = $(touchclass);
+        touchedDOM.bind('touchstart', function(){
+            $(this).addClass('touched');
+        });
+        touchedDOM.bind('touchend', function(){
+            $(this).removeClass('touched');
+        });
+      }
+    </script>
+    <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+</body>
+</html>
